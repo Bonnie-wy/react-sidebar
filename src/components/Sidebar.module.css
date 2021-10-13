@@ -1,0 +1,51 @@
+.sidebar {
+}
+
+.sidebar__overlay {
+  background-color: rgba(0, 0, 0, 0.5);
+  width: 100vw;
+  height: 100vh;
+  position: fixed;
+  top: 0;
+  left: 0;
+  cursor: pointer;
+  z-index: 998;
+}
+
+.sidebar__container {
+  overflow-y: auto;
+  background-color: white;
+  position: fixed;
+  right: 0;
+  top: 0;
+  height: 100vh;
+  z-index: 999;
+  padding: 20px 20px 2rem 20px;
+  width: 400px;
+  display: flex;
+  flex-direction: column;
+}
+
+.sidebar__controls {
+  display: flex;
+  justify-content: flex-end;
+  align-items: center;
+}
+
+.sidebar__close:after {
+  display: inline-block;
+  content: "\00d7";
+}
+
+.sidebar__close {
+  border: none;
+  background-color: transparent;
+  font-size: 36px;
+  cursor: pointer;
+}
+
+@media only screen and (max-width: 600px) {
+  .sidebar__container {
+    width: 100%;
+  }
+}
